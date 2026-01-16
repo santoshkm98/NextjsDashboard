@@ -1,0 +1,403 @@
+
+
+.pageLayout{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.loginContainer{
+  height: 100vh;
+}
+.logoContainer{
+  padding-left: 45px;
+}
+.loginImage{
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+.signinOptions{
+  width: 80%;
+}
+.signinOptions h1{
+  font-size: 64px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+.signinOptions h5{
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 0px!important;
+  color: #ffffff;
+  font-weight: 400;
+}
+.submitBtnSignin{
+  text-align: center;
+}
+.primaryBtn{
+  background: #00C2FF;
+background: linear-gradient(90deg,rgba(0, 194, 255, 1) 0%, rgba(79, 94, 255, 1) 100%);
+color: #fff;
+border: none;
+border-radius: 11rem;
+padding: 30px 50px;
+}
+.primaryBtn span{
+  font-size: 24px;
+}
+.submitBtnSignin{
+  margin: 50px 0px;
+}
+.signinOptions .loggintrouble{
+  text-align: end;
+  display: flex;
+  justify-content: end;
+  color: #009DFF;
+  font-size: 16px;
+}
+.signinRow{
+  align-items: center;
+}
+.submitBtnSignup{
+  margin: 15px 0px;
+  color: #fff;
+  font-size: 16px;
+}
+.inputContainers{
+  margin-top: 35px;
+}
+.marginComponent{
+  padding: 50px 50px 0px ;
+}
+.backButton{
+  display: flex;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 35px 0px;
+}
+.leftArrow{
+  padding-right: 6px;
+}
+.resetMethods{
+  margin: 6% 0%;
+}
+.resetBoxes{
+  border: 1px solid #6B6B6B;
+  padding: 24px;
+  border-radius: 32.36px;
+}
+.resetBoxes:nth-child(1){
+  margin-right: 10%;
+}
+.resetBoxes h4{
+  text-align: center;
+  margin: 20px 0px;
+  color: #fff;
+  font-size: 22px;
+}
+.resetValues h4{
+  text-align: center;
+  margin: 32px 0px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.secondaryBtn{
+    background: transparent;
+    border: 0.5px solid #00C2FF;
+    color: #fff;
+    border-radius: 11rem;
+    padding: 30px 50px;
+    font-size: 24px;
+    height: 24px;
+}
+.adjacentButtons{
+  text-align: center;
+}
+
+.qrConfigurationSteps{
+  padding: 0px 50px 0px;
+  margin: 3% 0%;
+}
+.stepsContainerDivision h5{
+  color: #fff;
+  font-size: 20px;
+  margin: 52px 0px;
+}
+.stepsContainerDivision{
+  width: 85%;
+  margin: 50px auto;
+}
+.resetQrButtons{
+  margin-top: 24px;
+  text-align: center;
+}
+.marginalLayout{
+  padding: 0px 50px 0px;
+    margin: 3% 0%;
+}
+
+/* .ParagraphText {
+color: #fefefec7;
+font-weight: 400;
+font-size: 16px;
+margin-bottom: 20px!important;
+} */
+.formLabels{
+  font-size: 18px;
+  color: #fff;
+}
+.formComponent {
+  margin: 54px 0px;
+}
+.primaryFilledBtn{
+  background: #00C2FF;
+  color: #fff;
+  border: none;
+  border-radius: 11rem;
+  padding: 30px 50px;
+}
+.primaryFilledBtn span {
+  font-size: 24px;
+}
+
+
+
+
+.reportsTitle{
+  color: #fafafa!important;
+  margin: 20px 0px;
+  font-size: 24px!important;
+}
+
+
+
+
+
+.cardWrapper {
+  width: 320px;
+  height: 180px;
+  position: relative;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #d7f0fb;
+  padding: 20px;
+  position: relative;
+  clip-path: path("M 0 40 Q 0 0 40 0 H 220 Q 240 0 250 20 Q 300 20 300 70 Q 300 190 270 190 H 40 Q 0 190 0 150 Z");
+  border-radius: 30px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.arrowButton {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #0a74ff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.projectsLayouts{
+  padding: 24px;
+}
+
+@media(max-width:1260px){
+  .projectsLayouts{
+    padding: 10px;
+  }
+}
+
+
+/* .boxLinks a{
+  color: #ffffff;
+
+} */
+.alertResults{
+  color: #ffffff;
+  font-size:18px;
+}
+.alertResults li{
+  font-size: 16px;
+  color: #fafafa;
+  padding-bottom: 12px;
+}
+
+
+.resultsOutput h5{
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 0px !important;
+}
+
+/* .innerCards{
+  border: 1px solid #6B6B6B;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+} */
+.innerCards h3{
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 12px;
+
+}
+
+/* .innerCards h4{
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 3px!important;
+
+} */
+.innerCards h5{
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 12px;
+
+}
+.newsTitle{
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 6px;
+
+}
+.dateText{
+font-size: 16px;
+color: #6b6b6b;
+}
+.tagText{
+  color: #000;
+  font-size: 16px;
+}
+.inventoryIcons{
+  color: #ADADAD;
+  border: 1px solid #adadad;
+  padding: 4px;
+  border-radius: 8px;
+}
+.inventoryBoxes .inventoryHead{
+  font-size: 16px;
+  color: #fafafa;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.inventoryBoxes .inventoryParagraph{
+  font-size: 12px;
+  color: #f9f9f9d6;
+  margin-bottom: 0px!important;
+}
+
+.dashboardCards{
+  border: 1px solid #6B6B6B;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  margin: 15px 0px;
+}
+/* .dashboardCards h3{
+  color: #fff;
+  font-size: 22px;
+  margin: 15px 0px;
+  font-weight: 600;
+  margin-bottom: 8px;
+ 
+} */
+.dashboardImages{
+  width: 100%;
+}
+.inventoryTotal{
+  padding: 45px 0px;
+  font-size: 36px !important;
+  color: #ffffff !important;
+  text-align: center;
+}
+/* .highPriority{
+  background-color: #F7423D;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  padding: 2px;
+  font-size: 16px;
+  margin-right: 3px;
+}
+.mediumPriority{
+  background-color: #f97f25;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  padding: 2px;
+  font-size: 16px;
+  margin-right: 3px;
+}
+.lowPriority{
+  background-color: #fbbc05;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 16px;
+  margin-right: 3px;
+} */
+
+/* .dashboardCards label{
+  font-size: 16px!important;
+} */
+/* .editOptions{
+  opacity: 0;
+}
+.projectCards:hover .editOptions{
+  opacity: 1;
+  transition: .3s;
+} */
+
+
+.addUserButton{
+  width: fit-content!important;
+  margin: 15px 0px;
+  background: transparent;
+border: 1px solid #6b6b6b;
+  color: #ffffff;
+  border-radius: 10rem;
+
+}
+
+
+
+
+
+
+.newCards{
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.newCards h3{
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 12px;
+
+}
+
+.newCards h4{
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 3px!important;
+
+}
+.newCards h5{
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 12px;
+
+}

@@ -1,0 +1,94 @@
+'use client';
+import React, { useState } from 'react';
+import { Row, Col, Radio, Pagination, Card } from 'antd';
+import styles from '../../app/page.module.css';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+const jakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
+// Sample mock data
+const mockData = {
+  pending: [
+    { title: 'Request Download', description: 'Request for downloading the research paper created in the project research on Diabetes.' },
+    { title: 'Request Import', description: 'Request for Importing some content in the project research on Diabetes.' },
+    { title: 'Request Import', description: 'Request for Importing some content in the project research on Diabetes.' },
+    { title: 'Request Import', description: 'Request for Importing some content in the project research on Diabetes.' },
+    { title: 'Request Import', description: 'Request for Importing some content in the project research on Diabetes.' },
+  ],
+  declined: [],
+  approved: [],
+  all: [],
+};
+
+const RequestList = () => {
+  const [filter, setFilter] = useState('pending');
+  const [page, setPage] = useState(1);
+  const pageSize = 4;
+
+  const onChangeFilter = (e) => {
+    setFilter(e.target.value);
+    setPage(1);
+  };
+
+  const onChangePage = (page) => {
+    setPage(page);
+  };
+
+  const data = mockData[filter] || [];
+  const paginatedData = data.slice((page - 1) * pageSize, page * pageSize);
+
+  return (
+    <Row className={jakartaSans.className}>
+      <Col span={24}>
+        <Radio.Group value={filter} onChange={onChangeFilter} style={{ marginBottom: 20 }}>
+          <Radio.Button value="pending">Pending</Radio.Button>
+          <Radio.Button value="declined">Declined</Radio.Button>
+          <Radio.Button value="approved">Approved</Radio.Button>
+          <Radio.Button value="all">All</Radio.Button>
+        </Radio.Group>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          {paginatedData.map((item, index) => (
+            <Card
+              key={index}
+              style={{
+                borderRadius: 12,
+                border: '1px solid rgba(255,255,255,0.2)',
+                background: '#000',
+                color: '#fff',
+              }}
+           
+            >
+              <h3 style={{ margin: 0 }}>{item.title}</h3>
+              <p style={{ margin: 0, color: '#ccc' }}>{item.description}</p>
+            </Card>
+          ))}
+        </div>
+
+        {data.length > pageSize && (
+          <div style={{ marginTop: 24, textAlign: 'center' }}>
+            <Pagination
+              current={page}
+              total={data.length}
+              pageSize={pageSize}
+              onChange={onChangePage}
+              showSizeChanger={false}
+              style={{ background: '#000' }}
+              itemRender={(page, type, originalElement) => {
+                if (type === 'page') {
+                  return <span style={{ color: '#fff' }}>{page}</span>;
+                }
+                return originalElement;
+              }}
+            />
+          </div>
+        )}
+      </Col>
+    </Row>
+  );
+};
+
+export default RequestList;

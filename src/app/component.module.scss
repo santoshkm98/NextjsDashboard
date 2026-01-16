@@ -1,0 +1,343 @@
+$color-white: #FAFAFA;
+$color-light: #fefefec7;
+$color-light-grey: #ADADAD;
+$color-primary: #00C2FF;
+$font-bold: 800;
+$font-semibold: 600;
+$font-light: 400;
+$titleh3: 1.375rem;
+$titleh2: 28px;
+$default-border: 1px solid #6b6b6b;
+$medium-border-radius: 8px;
+$xl-border-radius: 24px;
+$captions-font: 16px;
+$titleh5: 18px;
+$transparent-bg: transparent;
+$titleh4: 32px;
+$spanText: 14px;
+$tagYellow: #FFB50A;
+$tagRed: #F7423D;
+$tagOrange: #FF7F00;
+$tagGreen: green;
+$fontFamily: 'Plus Jakarta Sans', sans-serif ;
+
+
+.dashboardCards h3{
+    color: $color-white;
+    font-size: $titleh3;
+    font-weight: $font-semibold;
+    margin-bottom: 8px;
+
+  }
+  .dashboardCards{
+    border: $default-border;
+    border-radius: $medium-border-radius;
+    padding: 15px;
+    width: 100%;
+    margin: 15px 0px;
+  }
+  .ParagraphText {
+ 
+    font-weight: $font-light;
+    font-size: $captions-font;
+    margin-bottom: 20px!important;
+    }
+.boxLinks{
+        color: $color-white!important;
+    }
+
+.borderedCards{
+border: $default-border;
+border-radius: $medium-border-radius;
+padding: 10px;
+width: 100%;
+margin-bottom: 10px;
+min-height: 94px;
+      }  
+      
+.weakconfigsHeading{
+font-size: $titleh5;
+margin-bottom: 15px!important;
+font-weight: $font-light;
+}
+
+.dangerTags{
+    background-color: $transparent-bg;
+    border: 1px solid #F7423D;
+    color: #F7423D;
+    font-size: $captions-font;
+    font-weight: $font-light;
+    padding: 6px;
+  }
+  .warningTags{
+    background-color: $transparent-bg;
+    border: 1px solid #FF7F00;
+    color: #FF7F00;
+    font-size: $captions-font;
+    font-weight: $font-light;
+    padding: 6px;
+  }
+
+  .attackCards{
+    background-color: #202124;
+     border-radius: $medium-border-radius;
+     padding: 10px;
+     width: 100%;
+     margin-bottom: 10px;
+     min-height: 94px;
+    height: 90%;
+   }  
+   
+   .attackCards h5{
+     color: $color-white;
+     font-size: $titleh5;
+     margin-bottom: 15px;
+     font-weight: $font-light;
+   
+   }
+   .innerCards{
+    border: $default-border;
+    border-radius: $medium-border-radius;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .innerCards h4{
+    color: $color-white;
+    font-size: $titleh4;
+    margin-bottom: 4px;
+  
+  }
+  .innerText{
+    font-size: $titleh5;
+    margin-bottom: 5px!important;
+    flex: 1;
+    width: 100%;
+  }
+
+  .notificationCards h4{
+    font-size: $titleh5;
+    font-weight: $font-semibold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .notificationDescription{
+    font-size: $captions-font;
+    margin-bottom: 6px!important;
+  }
+  .notificationdate{
+    font-size: 14px;
+  }
+  .notificationCards{
+    margin: 15px 0px 6px 0px;
+  }
+  .ticketsText{
+    font-size: $spanText;
+    color: $color-light;
+    margin-bottom: 0px!important;
+  
+  }
+
+  @mixin theme($tags: red) {
+    background: $tags;
+    color: $color-white;
+    font-size: $spanText;
+    padding: 4px 8px;
+    border-radius: $medium-border-radius;
+  }
+  .notificationred{
+    @include theme($tags: $tagRed);
+  }
+  .notificationyellow{
+    @include theme($tags: $tagYellow);
+  }
+  .notificationorange{
+    @include theme($tags: $tagOrange);
+  }
+  .notificationgeneral{
+    @include theme($tags: $tagGreen);
+  }
+   .labelClass{
+    color: $color-white;
+    font-size: $titleh5;
+    font-family: $fontFamily;
+  }
+  .tableContainer{
+    border: $default-border;
+    border-radius: $xl-border-radius;
+    padding: 15px;
+    margin: 30px 0px;
+  }
+  .tableContainer h5{
+    font-size: $titleh4;
+    color: $color-white;
+    margin: 5px 0px;
+    font-weight: $font-semibold;
+  }
+  .tableCustom{
+    overflow-x: auto;
+  }
+  .tableCustom :global(.ant-table-thead > tr > th) {
+    font-size: $titleh5;
+  }
+  
+  .tableCustom :global(.ant-table-tbody > tr > td) {
+    font-size: $captions-font;
+  }  
+
+
+  .projectCards label{
+    @extend .labelClass; 
+  }
+  .readOnly{
+    color:$color-light-grey;
+    font-size: $titleh5;
+    font-family: $fontFamily;
+  }
+  .projectCards{
+    border: $default-border;
+    border-radius: $medium-border-radius;
+    padding: 10px 24px;
+    /* min-height: 100%; */
+    width: 100%;
+    margin: 15px 0px;
+  }
+  .projectCards h4{
+    color: $color-white;
+    font-size: $titleh2;
+    margin: 15px 0px 20px;
+    font-weight: $font-light;
+   
+  }
+  .editOptions{
+    opacity: 0;
+  }
+  .projectCards:hover .editOptions{
+    opacity: 1;
+    transition: .3s;
+  }
+
+  .updateButton{
+    background-color: $color-primary;
+    color: $color-white;
+    font-family: $fontFamily;
+    font-size: $captions-font;
+    border-radius: 10rem;
+    margin-right: 15px;
+  }
+  .cancelButton{
+    background-color: $transparent-bg;
+    border: $default-border;
+    font-family: $fontFamily;
+    font-size: $captions-font;
+    border-radius: 10rem;
+    color: $color-white;
+  }
+
+  .requestradioboxes{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .requestConfigCards{
+    border-radius: 20px;
+    border: 1px solid $color-white;
+    background: $transparent-bg;
+  }
+  .requestConfigCards h3{
+    color: $color-white;
+    font-size: $titleh5;
+    font-weight: $font-semibold;
+    margin-bottom: 12px;
+  }
+  .requestConfigCards p{
+    color: #6b6b6b;
+    font-size: $captions-font;
+    font-weight: $font-light;
+  }
+  .headerProfileIcon{
+    background-color: $color-primary;
+    border-radius: 50px;
+  }
+  
+  .collapsibleContainer{
+    background-color: #202020;
+    padding: 14px;
+      border-top-right-radius: 27px;
+      border-bottom-right-radius: 29px;
+  }
+  .selectBoxContainers{
+    margin: 24px 0px;
+    align-items: center;
+    gap: 8px;
+  }
+  .attackNumbers{
+    margin: 0 auto;
+    width: 56px;
+    background: #273150;
+    border-radius: 50%;
+    padding: 5px 20px;
+  }
+
+  .toggleGroup {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .toggleButton {
+    margin-right: 10px;
+    background-color: transparent;
+    color: #fafafa;
+    border: none;
+    padding: 8px 16px;
+    border-radius: $medium-border-radius;
+    cursor: pointer;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+    font-family: $fontFamily;
+  }
+  
+  .toggleButton.active {
+    background-color: #273150;
+    color: #fafafa;
+    font-weight: 600;
+  }
+.graphsPan{
+  font-size: 18px;
+  cursor: pointer;
+  color: #fafafa;
+  border: $default-border;
+  padding: 8px;
+  border-radius: $medium-border-radius
+}
+
+// 23-5-25
+.listItems{
+  border-bottom: $default-border;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline!important;
+  justify-content: flex-start!important;
+}
+.paragraphContent{
+  font-size: $titleh5;
+  margin-bottom: 10px!important;
+}
+// .cardBox {
+//   padding: 26px 40px;
+// }
+.analysisheading{
+  margin: 0px;
+  font-size: $titleh4;
+}
+// .weakconfigsTitle{
+// font-size: $titleh5;
+// margin-bottom: 15px;
+// font-weight: $font-light;
+// }
+
+// .Table-dropdown{
+//   width: 150px;
+// }
+.boxHeadline{
+  font-size: 22px!important;
+}
